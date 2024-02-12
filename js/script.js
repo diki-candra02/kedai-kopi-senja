@@ -57,8 +57,8 @@ document.querySelector(".modal .close-icon").onclick = (e) => {
 
 // Klik diluar Modal
 window.onclick = (e) => {
-  e.preventDefault();
   if (e.target === itemDetailModal) {
+    e.preventDefault();
     itemDetailModal.style.display = "none";
   }
 };
