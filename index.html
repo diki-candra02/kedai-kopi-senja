@@ -31,13 +31,50 @@
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
         <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
         <a href="#contact">Kontak</a>
       </div>
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="search-btn"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-btn"><i data-feather="shopping-cart"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
+
+      <!-- Search Form Start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="Search here .." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- Search Form End -->
+
+      <!-- Shopping Cart Start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="product-1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="item-remove"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="product-1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="item-remove"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/1.jpg" alt="product-1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30K</div>
+          </div>
+          <i data-feather="trash-2" class="item-remove"></i>
+        </div>
+      </div>
+      <!-- Shopping Cart End -->
     </nav>
     <!-- Navbar End -->
 
@@ -46,10 +83,10 @@
       <main class="content">
         <h1>Mari Nikmati <span>Kopi</span> dengan <span>Senja</span></h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-          ducimus eum.
+          Mari nikmati secangkir kopi yang hangat sambil menyaksikan keindahan
+          senja yang melukis langit.
         </p>
-        <a href="#" class="cta">Beli Sekarang</a>
+        <!-- <a href="#" class="cta">Beli Sekarang</a> -->
       </main>
     </section>
     <!-- Hero Section End -->
@@ -64,15 +101,16 @@
         <div class="content">
           <h3>Kenapa Memilih Kopi Kami ?</h3>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatem, dolor laboriosam. Blanditiis quae consectetur nostrum
-            adipisci dolores eum sit tempore?
+            Ketika Anda memilih kopi kami, Anda memasuki dunia cita rasa yang
+            istimewa dan terjaga kualitasnya.
           </p>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio,
-            eligendi.ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatem, dolor laboriosam. Blanditiis quae consectetur nostrum
-            adipisci dolores eum sit tempore?
+            Kami memilih biji kopi dengan teliti, hanya yang berasal dari
+            ladang-ladang terbaik, sehingga setiap tegukan mencerminkan kualitas
+            terbaik yang kami tawarkan. Kami bangga dengan transparansi dalam
+            asal usul kopi kami, memastikan Anda dapat melacak perjalanan dari
+            perkebunan hingga cangkir Anda, sambil merasakan keberlanjutan dan
+            kepedulian terhadap lingkungan dan komunitas petani kopi.
           </p>
         </div>
       </div>
@@ -82,10 +120,7 @@
     <!-- Menu Section Start -->
     <section id="menu" class="menu">
       <h2><span>Menu</span> Kami</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed quos unde
-        impedit pariatur voluptate nemo!
-      </p>
+      <p>Jelajahi ragam rasa kopi eksklusif kami dalam menu istimewa kami!</p>
       <div class="row">
         <div class="menu-card">
           <img src="./img/menu/1.jpg" alt="Espresso" class="menu-card-img" />
@@ -121,13 +156,89 @@
     </section>
     <!-- Menu Section End -->
 
+    <!-- Product Section Start -->
+    <section class="products" id="products">
+      <h2><span>Produk Unggulan</span> Kami</h2>
+      <p>
+        Temukan lebih lanjut tentang produk kami dan nikmati pengalaman
+        berkualitas!
+      </p>
+
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="show-detail-product"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-img">
+            <img src="./img/products/1.jpg" alt="product-1" />
+          </div>
+          <div class="product-content">
+            <h3>Coffie Alfarrobas</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class=""></i>
+              <i data-feather="star" class=""></i>
+              <i data-feather="star" class=""></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="show-detail-product"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-img">
+            <img src="./img/products/1.jpg" alt="product-1" />
+          </div>
+          <div class="product-content">
+            <h3>Coffie Alfarrobas</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class=""></i>
+              <i data-feather="star" class=""></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="show-detail-product"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-img">
+            <img src="./img/products/1.jpg" alt="product-1" />
+          </div>
+          <div class="product-content">
+            <h3>Coffie Alfarrobas</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Product Section End -->
+
     <!-- Contact Section Start -->
     <section id="contact" class="contact">
       <h2><span>Kontak</span> Kami</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus,
-        inventore?
-      </p>
+      <p>Hubungi kami untuk informasi lebih lanjut.</p>
       <div class="row">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63392.66464076427!2d106.75863134639418!3d-6.76478976729853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69cc92293bd7bf%3A0xf2039a32f77f7367!2sCicurug%2C%20Sukabumi%20Regency%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1707704061644!5m2!1sen!2sid"
@@ -166,6 +277,7 @@
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
         <a href="#menu">Menu</a>
+        <a href="#product">Produk</a>
         <a href="#contact">Kontak</a>
       </div>
       <div class="credit">
@@ -173,6 +285,35 @@
       </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- Modal Box Item Detail Start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#"><i data-feather="x" class="close-icon"></i></a>
+        <div class="modal-content">
+          <img src="./img/products/1.jpg" alt="product-1" />
+          <div class="product-content">
+            <h3>Coffie Alfarrobas</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+              necessitatibus ad eligendi praesentium impedit rem quaerat libero
+              ratione aperiam. Quibusdam beatae nemo voluptatem quisquam
+              blanditiis.
+            </p>
+            <div class="product-stars">
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+              <i data-feather="star" class="star"></i>
+            </div>
+            <div class="product-price">IDR 30K <span>IDR 55K</span></div>
+            <a href="#"><i data-feather="shopping-cart"></i> add to cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Box Item Detail End -->
 
     <!-- Feather Icons -->
     <script>
