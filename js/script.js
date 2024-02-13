@@ -19,7 +19,8 @@ searchBtn.onclick = (e) => {
   searchBox.focus();
 };
 
-cartBtn.onclick = () => {
+cartBtn.onclick = (e) => {
+  e.preventDefault();
   shoppingCart.classList.toggle("active");
 };
 
