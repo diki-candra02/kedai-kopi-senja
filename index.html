@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kedai Kopi Senja</title>
+    <title>KOPI SENJA | Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="./img/icon.png" />
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,16 +31,22 @@
     ></script>
 
     <!-- App -->
-    <script src="./src/app.js"></script>
+    <script src="./src/app.js" async></script>
+
+    <!-- Midtrans -->
+    <script type="text/javascript"
+      src="https://app.sandbox.midtrans.com/snap/snap.js"
+      data-client-key="SB-Mid-client-v1-N7ZW4WKQAPnt0"></script>
+
   </head>
   <body>
     <!-- Navbar Start -->
     <nav class="navbar" x-data>
-      <a href="#home" class="navbar-logo">kopi<span>senja.</span></a>
+      <a href="#home" class="navbar-logo">kopi<span>senja</span>.</a>
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
-        <a href="#menu">Menu</a>
+        <!-- <a href="#menu">Menu</a> -->
         <a href="#products">Produk</a>
         <a href="#contact">Kontak</a>
       </div>
@@ -94,6 +101,12 @@
         <div class="form-container" x-show="$store.cart.items.length">
           <h5>Customer Detail</h5>
           <form action="" id="checkoutForm">
+            <input
+              type="hidden"
+              name="items"
+              x-model="JSON.stringify($store.cart.items)"
+            />
+            <input type="hidden" name="total" x-model="$store.cart.total" />
             <label for="name">
               <span>Name</span>
               <input type="text" name="name" id="name" />
@@ -146,10 +159,13 @@
           <p>
             Kami memilih biji kopi dengan teliti, hanya yang berasal dari
             ladang-ladang terbaik, sehingga setiap tegukan mencerminkan kualitas
-            terbaik yang kami tawarkan. Kami bangga dengan transparansi dalam
-            asal usul kopi kami, memastikan Anda dapat melacak perjalanan dari
-            perkebunan hingga cangkir Anda, sambil merasakan keberlanjutan dan
-            kepedulian terhadap lingkungan dan komunitas petani kopi.
+            terbaik yang kami tawarkan.
+          </p>
+          <p>
+            Kami bangga dengan transparansi dalam asal usul kopi kami,
+            memastikan Anda dapat melacak perjalanan dari perkebunan hingga
+            cangkir Anda, sambil merasakan keberlanjutan dan kepedulian terhadap
+            lingkungan dan komunitas petani kopi.
           </p>
         </div>
       </div>
@@ -157,7 +173,7 @@
     <!-- About Section End -->
 
     <!-- Menu Section Start -->
-    <section id="menu" class="menu">
+    <!-- <section id="menu" class="menu">
       <h2><span>Menu</span> Kami</h2>
       <p>Jelajahi ragam rasa kopi eksklusif kami dalam menu istimewa kami!</p>
       <div class="row">
@@ -192,7 +208,7 @@
           <p class="menu-card-price">IDR 15K</p>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Menu Section End -->
 
     <!-- Product Section Start -->
@@ -345,7 +361,7 @@
       <div class="links">
         <a href="#home">Home</a>
         <a href="#about">Tentang Kami</a>
-        <a href="#menu">Menu</a>
+        <!-- <a href="#menu">Menu</a> -->
         <a href="#product">Produk</a>
         <a href="#contact">Kontak</a>
       </div>
